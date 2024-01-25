@@ -1,0 +1,145 @@
+[
+  {
+    "id": 102,
+    "title": "Pan Integral",
+    "description": "Pan integral, 500 gramos",
+    "price": 15,
+    "code": "BR102",
+    "stock": 80,
+    "status": true,
+    "category": "Panificados y cereales",
+    "thumbnails": [
+      "pan.jpg"
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Manzanas Rojas",
+    "description": "Bolsa de manzanas rojas, 1 kg",
+    "price": 30,
+    "code": "AP103",
+    "stock": 50,
+    "status": true,
+    "category": "Frutas y verduras",
+    "thumbnails": [
+      "manzanas.jpg"
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Arroz Blanco",
+    "description": "Arroz blanco, 1 kg",
+    "price": 25,
+    "code": "RC104",
+    "stock": 70,
+    "status": true,
+    "category": "Arroz",
+    "thumbnails": [
+      "arroz.jpg"
+    ]
+  },
+  {
+    "id": 105,
+    "title": "Pasta de Tomate",
+    "description": "Lata de pasta de tomate, 300 gr",
+    "price": 10,
+    "code": "TM105",
+    "stock": 60,
+    "status": true,
+    "category": "Conservas y salsas de tomate",
+    "thumbnails": [
+      "tomate.jpg"
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Cereal de Avena",
+    "description": "Caja de cereal de avena, 500 gr",
+    "price": 22,
+    "code": "CR106",
+    "stock": 40,
+    "status": true,
+    "category": "Panificados y cereales",
+    "thumbnails": [
+      "cereal.jpg"
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Huevos Orgánicos",
+    "description": "Docena de huevos orgánicos",
+    "price": 35,
+    "code": "EG107",
+    "stock": 90,
+    "status": true,
+    "category": "Huevos",
+    "thumbnails": [
+      "huevos.jpg"
+    ]
+  },
+  {
+    "id": 108,
+    "title": "Queso Mozzarella",
+    "description": "Queso mozzarella, 500 gr",
+    "price": 40,
+    "code": "CH108",
+    "stock": 30,
+    "status": true,
+    "category": "Quesos excepto untables y ricotas",
+    "thumbnails": [
+      "queso.jpg"
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Café Molido",
+    "description": "Paquete de café molido, 250 gr",
+    "price": 60,
+    "code": "CF109",
+    "stock": 100,
+    "status": true,
+    "category": "Infusiones",
+    "thumbnails": [
+      "cafe.jpg"
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Chocolate en Barra",
+    "description": "Barra de chocolate, 100 gr",
+    "price": 15,
+    "code": "CHC110",
+    "stock": 50,
+    "status": true,
+    "category": "Golosinas, alfajores y chocolates",
+    "thumbnails": [
+      "chocolate.jpg"
+    ]
+  },
+  {
+    "id": 101,
+    "title": "Leche Entera",
+    "description": "Leche de vaca entera, 1 litro",
+    "price": 20,
+    "code": "LK101",
+    "stock": 100,
+    "status": true,
+    "category": "Leches",
+    "thumbnails": [
+      "leche.jpg"
+    ]
+  },
+  {
+    "id": 400,
+    "title": "Producto de prueba",
+    "description": "Descripción del producto",
+    "price": 100,
+    "code": "PRD001",
+    "stock": 50,
+    "status": true,
+    "category": "pruebaaaaaaaaaa",
+    "thumbnails": [
+      null
+    ]
+  }
+]
