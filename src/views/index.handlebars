@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="j">
+    <h2 class="text-danger fs-4 container mb-4">¡Mirá las Mejores Ofertas en Bebidas!</h2>
+    <section class="container_cards container d-flex justify-content-around">
+        {{#each products}}
+            <!--Card Product-->
+                <div class="card_product col-2 col-lg-4 p-4">
+                    <img class="img_card" src="/img/img-cocacola.png" alt="">
+                    <section class="info_card text-center">
+                        <p class="info_description">{{description}}</p>
+                        <p class="info_price text-danger ">${{price}}</p>
+                        <button type="button" class="btn btn-success btn-sm">Agregar</button>
+                    </section>
+                </div>
+        {{/each}}
+    </section>
+</body>
+</html>

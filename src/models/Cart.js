@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs'
 
 class Cart {
     constructor() {
@@ -75,4 +75,5 @@ class Cart {
     }
 }
 
-module.exports = new Cart
+const CartM = new Cart();
+export default CartM;

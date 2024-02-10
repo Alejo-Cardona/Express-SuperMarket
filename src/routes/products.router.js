@@ -1,6 +1,7 @@
-const express = require("express")
+import express from 'express'
+import manager from '../models/ProductManager.js'
+
 const router = express.Router()
-const manager = require('../models/ProductManager')
 
 // ya no necesito el /products ya que lo instancie en app.js
 router.get('/', (req, res) => {
@@ -57,4 +58,4 @@ router.delete('/:pid', (req, res) => {
 
 })
 
-module.exports = router
+export default router

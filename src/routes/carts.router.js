@@ -1,11 +1,12 @@
-const express = require("express")
+import express from 'express'
+import CartM from '../models/Cart.js'
+
 const router = express.Router()
-const Cart = require('../models/Cart')
 
 // ya no necesito el /carts ya que lo instancie en app.js
 router.post('/', (req, res) => {
     const dataFromBody = req.body;
-    let cart = Cart.addCart(dataFromBody)
+    let cart = CartM.addCart(dataFromBody)
 
     if (cart === false) {
         res.status(400).json({ error: 'Todos los son obligatorios' });
@@ -17,7 +18,7 @@ router.post('/', (req, res) => {
 
 router.get('/:cid', (req, res) => {
     let cid = parseInt(req.params.cid) 
-    const cartElements = Cart.getCartElementsById(cid)
+    const cartElements = CartM.getCartElementsById(cid)
 
     res.status(200).send(cartElements.products)
 })
@@ -26,7 +27,7 @@ router.post('/:cid/product/:pid', (req, res) => {
     let cid = parseInt(req.params.cid)
     let pid = parseInt(req.params.pid)
 
-    const add = Cart.addElementInCartById(cid, pid)
+    const add = CartM.addElementInCartById(cid, pid)
 
     if(add) {
         res.status(200).json({ mensaje: `Se agrego el producto al carrito` });
@@ -36,4 +37,4 @@ router.post('/:cid/product/:pid', (req, res) => {
 
 })
 
-module.exports = router
+export default router

@@ -1,0 +1,29 @@
+section.container_cards {
+    margin-bottom: 80px;
+}
+
+.card_product {
+    height: 120px;
+    width: 200px;
+    border-color: grey;
+    border-width: 2px;
+}
+
+.img_card {
+    height: 80%;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+section.info_card {
+    font-size: 12px;
+}
+
+
+p.info_price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+  

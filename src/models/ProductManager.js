@@ -1,8 +1,8 @@
-const fs = require('fs');
+import fs from 'fs'
 
 class ProductManager {
     constructor() {
-        this.path = '../productos.json'
+        this.path = './productos.json'
     }
 
     addProduct(product) {
@@ -40,12 +40,24 @@ class ProductManager {
         fs.writeFileSync(this.path, productsJSON);
     }
 
-    getProducts() {
+    getAllProducts() {
         // verifico la existencia de la data
         const existingData = fs.readFileSync(this.path, 'utf8')
         if(existingData) {
             const data = JSON.parse(existingData)
             return data;
+        } else {
+            console.log("La base de datos esta vacia")
+        }
+    }
+
+    getProducts(x) {
+        // verifico la existencia de la data
+        const existingData = fs.readFileSync(this.path, 'utf8')
+        if(existingData) {
+            const data = JSON.parse(existingData)
+            const items = data.slice(0, x)
+            return items;
         } else {
             console.log("La base de datos esta vacia")
         }
@@ -100,4 +112,5 @@ class ProductManager {
 
 }
 
-module.exports = new ProductManager
+const manager = new ProductManager()
+export default manager;
